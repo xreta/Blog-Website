@@ -1,0 +1,62 @@
+1. What is an event? 
+	Event is basically running throughout whenever an asynchronous function is running.
+
+2. What is event emitter?
+	Event emitter calls the events within it and run them synchronously with each other.
+
+3. What is package.json?
+	Basically a root folder where all the metadata is stored like the ProjectName, version, requirements.
+
+4. What is URL method?
+	Basically a method used to call or parse the URLs. Helps in transforming the URL into a readable format.
+
+5. What is Stream and FSstream?
+	Stream basically helps us read or write data continuously.
+
+6. What is dependency?
+	Basically Express and mongoose are dependecy and you install them using npm install methods in the terminal.
+
+7. Asynchronous method?
+	All node API packages are asynch. and they don't wait for it's completion and can move on to the next one.
+
+8. CallBack and Module.Exports?
+	Callback means calling the function after the completion of task and module.export exports the data in a single unit into file.
+
+9. REPL in NOde?
+	Basically READ, EVAL, PRINT, LOOP which does the mentioned things in series.
+
+10. Control FLow Function?
+	A code which runs bw the asynchronous functions.
+
+11. What is BUffer Class?
+	Converts the array of raw data in readable and store in the memory allocation of the V8 engine.
+	Used because pure JS is not compatible with binary data.
+
+12. What is piping?
+	Used to connect the o/p of another stream to the other stream.
+
+13. Open a file using Node.js?
+	fs.open(path, flags, callback)
+
+14. Concept of Middleware and static files?
+	Receives the REQUEST and RESPONSE objects. App.use is used after the express is called.
+
+15. Types of HTTP requests?
+	GET, POST, HEAD, PUT, DELETE
+	
+	GET: retrieve the data
+	POST: to upload a data
+	PUT: to update a data
+	DELETE: to delete a data	
+
+16. Connect with the MongoDB server?
+	We first use the require method to call the mongoose and then create a variable dbURI with the URL of the cluster or database.
+
+17. What is NODE_ENV?
+	to detect the environment we are in Express server.
+
+18. Timing features?
+	setTimeout and clearTimeout, setInterval and clearInterval
+
+19.  
+	   

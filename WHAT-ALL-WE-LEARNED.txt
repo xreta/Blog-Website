@@ -1,0 +1,72 @@
+1. setInterval
+2. setTimeout
+3. clearTimeout
+4. require method
+5. module.export, require 
+6. fs MODULE
+7. fs.readFile, .writeFile, .mkdir, .rmdir, .unlink
+8. fs.existsSync == {Synchronous function, so it is very fast}
+9. stream MODULE
+10. createReadStream(), writeReadStream()
+11. readStream.on == {Basically .on is like an eventListener}
+12. .pipe
+13. encoding = 'utf8'
+14. req.url, req.method
+15. res.setHeader(), res.write(), res.end()
+16. path setting
+17. switch case in req.url
+18. interlinking of path setting and fs.readFile
+19. res.statusCode = , mainly { 200 - OK, 404- error, 301 - file moved properly }
+20. redirecting from a url using res.setHeader() and res.end() 
+21. Lodash and Nodemon packages 
+22. NPM packages, in built installer
+23. dependencies
+24. EXPRESS JS
+25. calling express js and implementing the app.get() of express
+24. mutliple html files routing through res.sendFile() with the root as _dirname
+25. redirecting using res.redirect();
+26. res.use for error page with res.status(404) for error code
+27. EJS, rendering ejs files in our app file
+28. morgan NPM MODULE
+29. morgan can give us the time taken to load if we use app.use(morgan('dev'))
+30. static folders as in the public folders which can be accessed from front end
+31. we can allot them using app.use(express.static('public'));
+32. all the static files can be accessed from public folder now then
+33. Difference bw NOSql and sql
+34. NoSQL is basically MongoDB
+35. Learned how to create a new project and a new user with the database on the mongoDB website
+36. taking the URL connect it with a const variable dbURI = ' *URL* '
+37. mongoose
+38. MongoDB, creating a cluster/database with collection data info and copy paste it in code the URL
+39. giving a const dbURL to the URl
+40. use of then,catch method for the db to be established and then use these methods to app.listen(port num) and catch error 
+41. creating of models folder which will carry the blogs schema structure
+42. we call schema from mongoose and create our own blogSchema or Schema where we will set the title, snippets and body values.
+43. the values will contain all the type and required conditions
+44. finally, we will give a model for the schema using mongoose.model('file name', new schema name)
+45. we export the file using module.exports
+46. learned about saving the data inside the NODE-TITS collection 
+47. after calling the Blog schema through requires method, we can use app.get('/add-blog') to save in the MongoDB
+48. the app.get('/add-blog') is an asynchronous method so we can use .then, .catch method to print the result and catch error
+49. likewise, we can use it for all-blog and single-blog
+50. for single-blog, we can .findById method to search for the specific data from the database
+51. we fetched the redirection inside the root(./) web url and we will be redirected to index whenever we call for ./blogs now
+52. we used res.redirect method to redirect the ./ to the ./blogs
+53. now inside the .then(result) callback function we will input the index file.
+54. we will use res.render('index' {title: 'All Blogs' , blogs: result }) to render the result from the index inside the views folder
+55. learned about the post method
+56. we use app.post and the same functions
+57. a new blog instance will be created by using the const blog = new Blog(req.body);
+58. the req.body in the new Blog instance is the new blog made in the url.
+59. blog.save() to be used to save the new instance in the database.
+60. learned about routers and MVC
+61. basically MVC means Models, Views and Controllers.
+62. Routers are express modules and are called by express.Router()
+63. we create a routes folder and blogRoutes.js were we cut&paste the routes.
+64. we basically link them using module.exports = router
+65. we call the const blogRoutes using require( path ) and use app.use to use the router in the app.js file.
+66. we create a controllers folder
+67. controller files are inter-related to the routes folder files.
+68. we create five functions and cut&paste the code from the routes files and paste it in the controllers filles.
+69. using the module.exports and requires method used in the app.js file we can connect these two files.
+70. instead of the cut code, we can just use the blogController.FUNCTION-NAME to implement that code.
